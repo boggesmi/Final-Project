@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Environmental History (Cartographically Speaking)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-curve@2.0.0/leaflet.curve.js"></script>
+</head>
+<body>
+    <header>
+        <h1>US Environmental History (Cartographically Speaking)</h1>
+        <p>Explore the environmental history of the United States through these interactive maps</p>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Map Selections</h2>
+            <ul class="map-options">
+                <li class="active" data-map="old-world">Old World (Topographical)</li>
+                <li data-map="colonies">American Colonies (European Latitude Comparison)</li>
+                <li data-map="midwest">Midwest (Resource Commodification & Railroads)</li>
+                <li data-map="south">Southern Plantations</li>
+                <li data-map="west">The West (Rectangular Survey System)</li>
+                <li data-map="modern">Modern US Infrastructure & Roadways</li>
+                <li data-map="global">Global Interconnectedness (Airport Networks)</li>
+            </ul>
+            
+            <div class="api-key-section">
+                <h3>Stadia Maps API Key</h3>
+                <p class="small-text">Enter your Stadia Maps API key if using outside of localhost</p>
+                <input type="text" id="stadia-api-key" placeholder="Your Stadia Maps API key">
+                <button id="save-api-key">Save Key</button>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="map-info">
+                <h3 id="current-map-title">Old World (Topographical)</h3>
+                <p id="current-map-description">This map shows the topographical features of the United States before state boundaries were established.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Cartography Final Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
