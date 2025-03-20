@@ -1,18 +1,18 @@
 # US Environmental History Maps
 
-This project is a web-based map viewer for exploring the environmental history of the United States. It was created as a final project for a Cartography course.
+This project is a web-based map viewer for exploring the environmental history of the United States. It was created as a final project for a Cartography course at Oregon State University.
 
 ## Features
 
 The application provides 7 different map views:
 
-1. **Old World (Topographical)** - A topographical map of the United States before state boundaries were established.
-2. **American Colonies (European Latitude Comparison)** - This map explores the original American Colonies by comparing latitude lines to Europe.
-3. **Midwest (Resource Commodification & Railroads)** - This map explores the Midwest with the theme of resource commodification and railroad lines.
+1. **Old World** - A topographical map of the United States before state boundaries were established.
+2. **American Colonies** - This map explores the original American Colonies by comparing latitude lines to Europe.
+3. **Midwest** - This map explores the Midwest with the theme of resource commodification and railroad lines.
 4. **Southern Plantations** - This map explores the South with a focus on Southern plantations.
-5. **The West (Rectangular Survey System)** - This map explores the West using the Rectangular Survey System.
+5. **The West** - This map explores the West using the Rectangular Survey System.
 6. **Modern US Infrastructure & Roadways** - This map gives an overview of all 50 US States with a focus on modern infrastructure and roadways.
-7. **Global Interconnectedness (Airport Networks)** - This map explores contemporary themes of interconnectedness and sustainability thinking through a global map of airports.
+7. **Global Interconnectedness** - This map explores contemporary themes of interconnectedness and sustainability thinking through a global map of airports.
 
 ## How to Use
 
@@ -38,12 +38,8 @@ The application provides 7 different map views:
 ## Future Improvements
 
 - Add specific historical overlays for each map theme
-- Implement latitude comparison lines for the Colonies map
-- Add railroad line overlays for the Midwest map
-- Include plantation markers for the Southern map
-- Add rectangular survey system grid overlays for the Western map
-- Include major highways for the modern US infrastructure map
-- Add airport locations and flight routes for the global interconnectedness map
+- Include additional maps/"chapters" of history
+- Build in more interactivity and sense of narrative
 
 ## License
 
