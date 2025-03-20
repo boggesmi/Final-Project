@@ -41,8 +41,8 @@ let railroadLayers = [];
 
 const mapConfigs = {
     'old-world': {
-        title: 'Old World (Topographical)',
-        description: 'This map shows the topographical features of the United States before state boundaries were established, when the land was shaped purely by natural forces. Before European settlement, the continent was a diverse mosaic of landscapes - from ancient forests and expansive grasslands to winding river systems and mountain ranges. These natural features influenced how indigenous peoples lived on the land for thousands of years, developing relationships with specific ecosystems and creating sustainable practices that worked within the limits of the natural world. As we explore this map, we see the land as it was - not as property to be divided and exploited, but as an interconnected system with its own logic and rhythms.',
+        title: 'Old World',
+        description: 'This map shows the topographical features of the United States before state boundaries were established, when the land was shaped by natural forces and indigenous peoples. Before European settlement, the continent was a diverse mosaic of landscapes - from ancient forests and expansive grasslands to winding river systems and mountain ranges. These natural features influenced how indigenous peoples lived on the land for thousands of years, developing relationships with specific ecosystems and creating sustainable practices that worked within the limits of the natural world. As we explore this map, we see the land as it was - not as property to be divided and exploited, but as an interconnected system with its own logic and rhythms.',
         center: [39.8283, -98.5795], // Center of the US
         zoom: 3,
         basemap: 'https://tiles.stadiamaps.com/tiles/stamen_watercolor/{z}/{x}/{y}.jpg',
@@ -62,8 +62,8 @@ const mapConfigs = {
         }
     },
     'colonies': {
-        title: 'American Colonies (European Latitude Comparison)',
-        description: 'This map explores the original American Colonies by comparing their latitude lines to Europe. The map highlights the thirteen original colonies: Connecticut, Delaware, Georgia, Maryland, Massachusetts, New Hampshire, New Jersey, New York, North Carolina, Pennsylvania, Rhode Island, South Carolina, and Virginia. The parallel latitude lines in 5-degree increments show how colonial settlements shared similar climates with European locations.',
+        title: 'American Colonies',
+        description: 'This map explores the original American Colonies by comparing their latitude lines to Europe. The map highlights the thirteen original colonies: Connecticut, Delaware, Georgia, Maryland, Massachusetts, New Hampshire, New Jersey, New York, North Carolina, Pennsylvania, Rhode Island, South Carolina, and Virginia. The parallel latitude lines in 5-degree increments show how colonial settlements shared similar climates with European locations. Notably, Boston shares a latitude line with northern Spain, and Charleston with Morocco. This discrepancy in climate was a surprise to European explorers and led colonists South along the Atlantic seaboard searching for better growing conditions.',
         center: [39.5, -77.5], // Center on the colonies
         zoom: 5,
         basemap: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', // Light basemap to make custom elements stand out
@@ -214,7 +214,7 @@ const mapConfigs = {
     },
     'midwest': {
         title: 'Midwest & Northeast Railroad Networks',
-        description: 'This map explores how railroad networks in the Midwest and Northeast shaped resource commodification and settlement patterns during the 1800s. These major rail lines connected growing industrial cities, facilitated the movement of raw materials, and enabled the rapid development of agriculture and manufacturing. Hover over a railroad line to see its name, or click for more details.',
+        description: 'This map explores how railroad networks in the Midwest and Northeast shaped resource commodification and settlement patterns during the 1800s. These major rail lines connected growing industrial cities, facilitated the movement of raw materials, and enabled the rapid development of agriculture and manufacturing. As settlements expanded in the New World and the forests of New England were cut down, the demand for wood increased, causing settlers to move westward for new resources. Hover over a railroad line to see its name, or click for more details.',
         center: [41.5, -84.0], // Center between Midwest and Northeast
         zoom: 5,
         basemap: 'https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png',
@@ -357,7 +357,7 @@ const mapConfigs = {
     },
     'south': {
         title: 'Southern Plantations',
-        description: 'This map explores the American South with a focus on the historical distribution of plantations and their environmental impact.',
+        description: 'This map explores the American South with a focus on the historical distribution of plantations and their environmental impact. A historical plantation diagram is overlaid on top of the map upstream of the Combahee River in South Carolina to show how plantation owners organized land for maximum agricultural production, reflecting the environmental impact of plantation agriculture.',
         center: [32.661418, -80.687945], // Updated to the specified coordinates
         zoom: 13, // Changed from 15 to 13 as requested
         basemap: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
@@ -448,8 +448,8 @@ const mapConfigs = {
         }
     },
     'west': {
-        title: 'The West (Rectangular Survey System)',
-        description: 'This map explores the American West using the Rectangular Survey System, showcasing how this grid-based land division method shaped western development and landscape.',
+        title: 'The West',
+        description: 'This map explores the American West using the Public Land Survey System, showcasing how this grid-based land division method shaped western development and landscape. This system was used to divide the land into townships and sections, oriented by Principal Meridians and Baselines, which were then sold to settlers. The system has its origins in the 1785 Land Ordinance, which was passed by the Continental Congress to be a more equitable way to divide the land, and to promote westward expansion. This Act was revisited in 1850, and again in 1862, with the passage of the Homestead Act, which granted 160 acres of land to settlers who agreed to live on and improve the land for five years.',
         center: [40.3428, -116.5453], // Center of the Western states (approximately)
         zoom: 5,
         basemap: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
@@ -556,8 +556,8 @@ const mapConfigs = {
         }
     },
     'modern': {
-        title: 'US Highways: Before & After Interstate System',
-        description: 'This map compares US roadways before and after the Federal-Aid Highway Act of 1956. Toggle between views to see the dramatic transformation of American infrastructure from a disconnected network of roads to the organized Interstate Highway System as it appeared by 1969. This massive infrastructure project fundamentally changed how Americans traveled, lived, and consumed goods.',
+        title: 'US Highways: Before & After the Interstate System',
+        description: 'This map compares US roadways before and after the Federal-Aid Highway Act of 1956. Toggle between views to see the dramatic transformation of American infrastructure from a disconnected network of roads oriented primarily to the east-west axis to the organized and orderly Interstate Highway System as it appeared by 1969. This massive infrastructure project fundamentally changed how Americans traveled, lived, and consumed goods, and fundamentally changed the landscape of the United States.',
         center: [39.8283, -98.5795], // Center of the US
         zoom: 5,
         basemap: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
@@ -647,8 +647,8 @@ const mapConfigs = {
         }
     },
     'global': {
-        title: "Global Interconnectedness (Airport Networks)",
-        description: "This map visualizes the global network of airports, showing how continental patterns emerge from airport density and flight routes between major hubs.",
+        title: "Global Interconnectedness (Airports)",
+        description: "This map visualizes the global network of airports, showing how continental silhouttes emerge simply from airport locations and density. The map is a simple visualization of the global interconnectedness of the modern world, and provides a glimpse at how the movement of people and goods is fundamentally changing the planet. Hover over an airport to see its name.",
         center: [20, 0],
         zoom: 2,
         setup: function(map) {
